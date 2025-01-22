@@ -2,7 +2,7 @@
 My name is Brody Wade Cox and my student e-mail is bwcox1@my.waketech.edu. This is my school GitHub account using my Wake Tech e-mail. I will use it when completing assignments in my online course throughout the semester. This repository was created to hold my assignments throughout the semester. This will allow me to save versions of things I work on throughout my time at Wake Tech. 
 # About Me
 ## Hobbies
-Most of my favorite things to do are active. I love being outside and experiencing new things. I enjoy skateboarding, scuba diving, surfing, snowboarding, running, and may more outdoor activities. However, in addition to outdoor activities, I also love to relax indoors as well. I recently learned embroidery, I grow over 10 species of plants, and I rock climb indoors at my gym. Personally, I dislike being bored and I am always looking for something new to try. 
+Most of my favorite things to do are active. I love being outside and experiencing new things. I enjoy skateboarding, scuba diving, surfing, snowboarding, running, and may more outdoor activities. I love to relax indoors as well. I recently learned embroidery, I grow over 10 species of plants, and I rock climb indoors at my gym. Personally, I dislike being bored and I am always looking for something new to try. 
 ### Websites I use frequently
 I generally use websites for school related projects.  
 
