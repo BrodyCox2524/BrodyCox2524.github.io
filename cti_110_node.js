@@ -1,4 +1,3 @@
-
 // This section loads modules.  It loads the Express server and stores
 // it in "express", then creates a application, a router, and a path handler
 const express = require('express');
@@ -30,11 +29,10 @@ app.use("/", router);
 
 router.get('/api/grades',function(req, res){
     pool.query(
-        `SELECT Students.student_id, first_name, last_name, AVG(assignments.grade) as total_grade \
-            FROM Students  \
-            LEFT JOIN Assignments ON Assignments.student_id = Students.student_id \
-            GROUP BY Students.student_id \
-            ORDER BY total_grade DESC`,
+        `SELECT Students.student_id, first_name, last_name, assignments.title, assignments.description, assignments.grade
+            FROM Students
+            LEFT JOIN Assignments ON Assignments.student_id = Students.student_id
+            ORDER BY Students.student_id, Assignments.assignment_id;`,
         [],
         function( err, result){
             if(err)
@@ -45,7 +43,7 @@ router.get('/api/grades',function(req, res){
             result.rows.forEach( 
                     function(row){
                         console.log(`Student Name: ${row.first_name} ${row.last_name}`);
-                        console.log(`Grade: ${row.total_grade}`);
+                        console.log(`Assignment: ${row.title} ${row.description} ${row.grade}`);
                     }
             ); // End of forEach
             
@@ -53,6 +51,7 @@ router.get('/api/grades',function(req, res){
         }
     );
 });
+
 
 let server = app.listen(3000, function(){
     console.log("App Server via Express is listening on port 3000");
